@@ -195,7 +195,11 @@ function deleteChat(id: number) {
           {messages.length === 0 ? (
             <>
               <div className="flex flex-1 items-center justify-center">
-                <Hero />
+                <Hero
+  onTemplateClick={(prompt) => {
+    setTemplatePrompt(prompt);
+  }}
+/>
               </div>
 
               <div className="px-10 pb-8">
